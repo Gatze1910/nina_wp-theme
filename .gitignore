@@ -1,0 +1,8 @@
+wp-config.php
+
+public/wp-content/uploads
+
+/node_modules/
+
+.vscode/
+

@@ -1,0 +1,56 @@
+{% extends '/timber/base.twig' %}
+{% block content %}
+  <section class="content--container-news">
+    <h2>
+      {{ function('the_title') }}
+    </h2>
+
+    {% for p in post %}
+      <div class="news--post-container">
+        <div class="news--post-big-picture">
+          <img src="{{ p.thumbnail.src }}"
+            alt="Image for {{ p.thumbnail.alt }}" />
+        </div>
+
+        <div class="news--post-content">
+          <div class="news--post-two-images">
+            <div>
+              <img src="{{ Image(p.meta('bildklein1')).src }}"
+                alt="{{ Image(p.meta('bildklein1')).alt }}" />
+            </div>
+
+            <div>
+              <img src="{{ Image(p.meta('bildklein2')).src }}"
+                alt="{{ Image(p.meta('bildklein1')).alt }}" />
+            </div>
+          </div>
+
+          <div class="news--post-text">
+            <h3>
+              {{ p.title }}
+            </h3>
+
+            {{ p.post_content }}
+
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--primary-color)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right-circle">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+{% endblock %}

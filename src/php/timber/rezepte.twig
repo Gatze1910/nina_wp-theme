@@ -1,0 +1,48 @@
+{% extends '/timber/base.twig' %}
+{% block content %}
+  <section class="content--container-rezepte">
+    <div class="content-rezepte">
+      <div class="content-context">
+        <h2>
+          {{ function('the_title') }}
+        </h2>
+      </div>
+
+      <div class="all-recipies">
+        {% for p in post %}
+          <div class="recipie">
+            <div class="recipie-image">
+              <img src="{{ Image(p.meta('rezeptbild')).src }}"
+                alt="{{ Image(p.meta('bildklein1')).alt }}" />
+            </div>
+
+            <div class="recipie-content">
+              <h2>
+                {{ p.title }}
+              </h2>
+
+              {{ p.post_content }}
+
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-right-circle">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

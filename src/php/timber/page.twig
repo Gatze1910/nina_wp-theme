@@ -1,0 +1,17 @@
+{% extends '/timber/base.twig' %}
+{% block content %}
+  <section class="content--container">
+    <aside class="asideimage"
+      style="background: url({{
+      function(
+        'get_the_post_thumbnail_url'
+      )
+      }}); background-size:cover;"></aside>
+    <div class="content-context">
+      <h2>
+        {{ function('the_title') }}
+      </h2>
+      {{ post.content }}
+    </div>
+  </section>
+{% endblock %}

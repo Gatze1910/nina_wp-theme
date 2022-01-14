@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6f0e53" />
+
+    <link rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./wp-content/themes/mini/favicons/favicon_package_v0.16/favicon-32x32.png" />
+    <link rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./wp-content/themes/mini/favicons/favicon_package_v0.16/favicon-16x16.png" />
+    <link rel="manifest"
+      href="./wp-content/themes/mini/favicons/favicon_package_v0.16/site.webmanifest" />
+    <link rel="mask-icon"
+      href="./wp-content/themes/mini/favicons/favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:height" content="158" />
+    <meta property="og:image:width" content="302" />
+    <meta property="og:description"
+      content="Foodlover and Foodblogger from Austria" />
+    <meta property="og:title" content="Nina M&uuml;ller" />
+    <meta property="og:url"
+      content="http://vm-aquamarine.multimediatechnology.at/" />
+
+    {{ function('wp_head') }}
+  </head>
+  
+<body>
+{{ function('get_header') }}
+    <main>
+
+      {% block content %}
+        <div class="fullfrontpage">
+            <section class="content--frontpage-head">
+            <aside class="asideimage"
+                style="background: url({{ function('get_the_post_thumbnail_url') }}); background-size:cover;">
+                </aside>
+
+            <div class="content--frontpage-hero">
+                <div class="content-info">
+                <h1>
+                    {{ post.title }}
+                </h1>
+                
+                {{ post.post_content }}
+
+                </div>
+      {% endblock %}

@@ -1,0 +1,309 @@
+/* sacramento-regular - latin */
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/sacramento-v8-latin/sacramento-v8-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/sacramento-v8-latin/sacramento-v8-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */
+      url('./fonts/sacramento-v8-latin/sacramento-v8-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/sacramento-v8-latin/sacramento-v8-latin-regular.woff')
+      format('woff'),
+    /* Modern Browsers */
+      url('./fonts/sacramento-v8-latin/sacramento-v8-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/sacramento-v8-latin/sacramento-v8-latin-regular.svg#Sacramento')
+      format('svg'); /* Legacy iOS */
+}
+
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/lato-v20-latin/lato-v20-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/lato-v20-latin/lato-v20-latin-300.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/lato-v20-latin/lato-v20-latin-300.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/lato-v20-latin/lato-v20-latin-300.woff') format('woff'),
+    /* Modern Browsers */ url('./fonts/lato-v20-latin/lato-v20-latin-300.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/lato-v20-latin/lato-v20-latin-300.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/lato-v20-latin/lato-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/lato-v20-latin/lato-v20-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/lato-v20-latin/lato-v20-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/lato-v20-latin/lato-v20-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+      url('./fonts/lato-v20-latin/lato-v20-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/lato-v20-latin/lato-v20-latin-regular.svg#Lato')
+      format('svg'); /* Legacy iOS */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/lato-v20-latin/lato-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/lato-v20-latin/lato-v20-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/lato-v20-latin/lato-v20-latin-700.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/lato-v20-latin/lato-v20-latin-700.woff') format('woff'),
+    /* Modern Browsers */ url('./fonts/lato-v20-latin/lato-v20-latin-700.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/lato-v20-latin/lato-v20-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/lato-v20-latin/lato-v20-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/lato-v20-latin/lato-v20-latin-900.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/lato-v20-latin/lato-v20-latin-900.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/lato-v20-latin/lato-v20-latin-900.woff') format('woff'),
+    /* Modern Browsers */ url('./fonts/lato-v20-latin/lato-v20-latin-900.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/lato-v20-latin/lato-v20-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+@import './sass/header.scss';
+@import './sass/main.scss';
+@import './sass/footer.scss';
+
+@mixin breakpoint($max) {
+  @media (max-width: $max) {
+    header {
+      .header__bar {
+        margin: 0 1.5rem;
+
+        nav {
+          position: absolute;
+          z-index: 1;
+
+          display: none;
+          top: 4.6rem;
+          left: 0;
+          width: 100%;
+          background-color: white;
+
+          .menu-header-container {
+            width: 100%;
+          }
+          ul {
+            flex-direction: column;
+            width: 100%;
+
+            li {
+              padding: 1rem !important;
+              border-top: black solid 2px;
+
+              a {
+                color: var(--primary-color);
+              }
+
+              &:last-child {
+                border-bottom: black solid 2px;
+              }
+
+              &:hover {
+                color: white;
+                cursor: pointer;
+                background-color: var(--primary-color);
+
+                a {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #burger {
+        display: block !important;
+      }
+    }
+    .content--frontpage-others {
+      flex-direction: column;
+    }
+    .content-info {
+      h1 {
+        margin-top: 1rem;
+      }
+      p {
+        margin-top: 2rem;
+      }
+    }
+    .content-item {
+      width: auto;
+    }
+    .content--frontpage-hero {
+      gap: 2rem;
+    }
+    .content--container {
+      flex-direction: column-reverse;
+    }
+    .content-context {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+      p {
+        padding: 0 2rem;
+      }
+    }
+    aside {
+      height: 400px;
+      width: auto;
+    }
+    .all-recipies {
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .recipie {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .news--post-container {
+      flex-direction: column;
+      align-items: center !important;
+
+      .news--post-big-picture {
+        width: 400px !important;
+      }
+    }
+    .content--container-news {
+      margin: 2rem 2rem;
+
+      h2 {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+  else {
+    header > div > nav {
+      display: flex;
+    }
+  }
+}
+
+@mixin breakpoint_burgermenu($min) {
+  @media (min-width: $min) {
+    #burger__icon {
+      display: none;
+    }
+  }
+}
+
+:root {
+  --logo-font: 2.8rem;
+  --h1-font: 5.5rem;
+  --h2-font: 2.3rem;
+  --h2-Sacramento-font: 4.2rem;
+  --h3-font: 2.2rem;
+  --h4-font: 1.5rem;
+  --header-font: 1.3rem;
+  --text-font: 1.2rem;
+  --footer-font: 1rem;
+  --button-font: 1.37rem;
+  --primary-color: #6f0e53;
+  --header-color: #cf75b6;
+  --footer-color: #f2f3f4;
+  --form-color: #f2f3f4;
+  --text-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  @include breakpoint(1000px);
+  @include breakpoint_burgermenu(1000px);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+body {
+  font-family: Lato;
+  line-height: inherit;
+
+  min-width: 420px;
+  width: auto !important;
+}
+
+h1 {
+  font-size: var(--h1-font);
+  color: var(--primary-color);
+  font-family: Sacramento;
+}
+
+h2 {
+  font-size: var(--h2-font);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: var(--h3-font);
+  color: var(--primary-color);
+}
+h4 {
+  font-size: var(--h4-font);
+  color: var(--primary-color);
+}
+p {
+  font-size: var(--text-font);
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+  width: fit-content;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
