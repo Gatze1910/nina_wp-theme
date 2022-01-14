@@ -32,11 +32,8 @@ set('allow_anonymous_stats', false);
 // Hosts
 
 host('vm-aquamarine.multimediatechnology.at')
-
     ->user('admin')
-
         ->port(5412)
-
         ->set('deploy_path', '/home/admin/nina');  
 // Tasks
 
