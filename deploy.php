@@ -7,7 +7,7 @@ require 'recipe/common.php';
 set('application', 'my_project');
 
 // Project repository
-set('repository', 'git@github.com:Gatze1910/nina_wp-theme.git');
+set('repository', 'https://github.com/Gatze1910/nina_wp-theme');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
