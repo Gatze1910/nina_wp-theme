@@ -169,7 +169,8 @@
         padding: 1rem;
       }
       .clips {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column !important;
       }
     }
     .content-item {
@@ -223,7 +224,8 @@
       }
     }
     .footer_bar {
-      flex-direction: column;
+      display: flex;
+      flex-direction: column !important;
     }
   }
   else {

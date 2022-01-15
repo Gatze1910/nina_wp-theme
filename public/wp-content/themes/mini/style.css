@@ -465,7 +465,8 @@ footer nav ul li a {
     padding: 1rem;
   }
   html .content-info .clips {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column !important;
   }
   html .content-item {
     width: auto;
@@ -515,7 +516,8 @@ footer nav ul li a {
     margin-bottom: 0rem;
   }
   html .footer_bar {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column !important;
   }
 }
 html else header > div > nav {
