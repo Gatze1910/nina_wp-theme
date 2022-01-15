@@ -223,6 +223,9 @@
       display: flex;
     }
   }
+  .footer_bar {
+    flex-direction: column;
+  }
 }
 
 @mixin breakpoint_burgermenu($min) {

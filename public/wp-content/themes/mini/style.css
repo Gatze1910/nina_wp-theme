@@ -155,7 +155,7 @@ aside {
   font-size: var(--h2-Sacramento-font);
 }
 .content-context p {
-  padding-left: 10rem;
+  padding: 0 15rem;
   align-self: flex-start;
 }
 .content-context .content-text {
@@ -508,6 +508,9 @@ footer nav ul li a {
 }
 html else header > div > nav {
   display: flex;
+}
+html .footer_bar {
+  flex-direction: column;
 }
 @media (min-width: 1000px) {
   html #burger__icon {
