@@ -156,6 +156,7 @@ aside {
 }
 .content-context p {
   padding: 0 15rem;
+  margin: 1rem;
   align-self: flex-start;
 }
 .content-context .content-text {
@@ -191,6 +192,7 @@ aside {
   margin-bottom: 5rem;
 }
 .content-info p {
+  padding: 0 15rem;
   margin-top: 5rem;
   color: black;
 }
