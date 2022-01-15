@@ -458,9 +458,14 @@ footer nav ul li a {
   }
   html .content-info h1 {
     margin-top: 1rem;
+    font-size: var(--h2-Sacramento-font);
   }
   html .content-info p {
     margin-top: 2rem;
+    padding: 1rem;
+  }
+  html .content-info .clips {
+    flex-direction: column;
   }
   html .content-item {
     width: auto;
