@@ -168,10 +168,9 @@
         margin-top: 2rem;
         padding: 1rem;
       }
-      .clips {
-        display: flex;
-        flex-direction: column !important;
-      }
+    }
+    .clips {
+      flex-direction: column !important;
     }
     .content-item {
       width: auto;
@@ -223,8 +222,7 @@
         margin-bottom: 0rem;
       }
     }
-    .footer_bar {
-      display: flex;
+    .footer__bar {
       flex-direction: column !important;
     }
   }

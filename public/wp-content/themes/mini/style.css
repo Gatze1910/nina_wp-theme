@@ -464,8 +464,7 @@ footer nav ul li a {
     margin-top: 2rem;
     padding: 1rem;
   }
-  html .content-info .clips {
-    display: flex;
+  html .clips {
     flex-direction: column !important;
   }
   html .content-item {
@@ -515,8 +514,7 @@ footer nav ul li a {
   html .content--container-news h2 {
     margin-bottom: 0rem;
   }
-  html .footer_bar {
-    display: flex;
+  html .footer__bar {
     flex-direction: column !important;
   }
 }
