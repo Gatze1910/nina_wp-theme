@@ -219,8 +219,10 @@ aside {
 .content-item {
   display: flex;
   flex-flow: column;
-  line-height: 2;
   width: 20rem;
+}
+.content-item p {
+  margin: 1rem 0;
 }
 .content-item button {
   align-self: end;

@@ -96,8 +96,11 @@ aside {
 .content-item {
   display: flex;
   flex-flow: column;
-  line-height: 2;
   width: 20rem;
+
+  p {
+    margin: 1rem 0;
+  }
 
   button {
     align-self: end;
