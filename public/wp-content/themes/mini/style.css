@@ -507,12 +507,12 @@ footer nav ul li a {
   html .content--container-news h2 {
     margin-bottom: 0rem;
   }
+  html .footer_bar {
+    flex-direction: column;
+  }
 }
 html else header > div > nav {
   display: flex;
-}
-html .footer_bar {
-  flex-direction: column;
 }
 @media (min-width: 1000px) {
   html #burger__icon {

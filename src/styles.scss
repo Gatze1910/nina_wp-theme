@@ -217,14 +217,14 @@
         margin-bottom: 0rem;
       }
     }
+    .footer_bar {
+      flex-direction: column;
+    }
   }
   else {
     header > div > nav {
       display: flex;
     }
-  }
-  .footer_bar {
-    flex-direction: column;
   }
 }
 
