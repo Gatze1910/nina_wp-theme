@@ -13,7 +13,9 @@ footer {
   .footer__icon {
     display: flex;
     gap: 20px;
+
     p {
+      padding: 0;
       color: black;
     }
   }
