@@ -298,11 +298,15 @@ h3 {
   font-size: var(--h3-font);
   color: var(--primary-color);
 }
+
 h4 {
   font-size: var(--h4-font);
   color: var(--primary-color);
 }
+
 p {
+  line-height: 1.5;
+  padding: 0.5rem 0;
   font-size: var(--text-font);
 }
 

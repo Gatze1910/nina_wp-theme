@@ -233,7 +233,6 @@ aside {
 .content-item {
   display: flex;
   flex-flow: column;
-  line-height: 2;
   width: 20rem;
 }
 .content-item button {
@@ -569,6 +568,8 @@ h4 {
 }
 
 p {
+  line-height: 1.5;
+  padding: 0.5rem 0;
   font-size: var(--text-font);
 }
 
