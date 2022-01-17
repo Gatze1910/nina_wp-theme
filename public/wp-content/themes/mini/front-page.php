@@ -29,8 +29,8 @@ Timber::render('/timber/frontpage-header.twig', $context); ?>
                     <?php } 
                 }
             else {?>
-                <p>Schau später nochmal vorbei...</p><?
-            }
+                <p>Schau später nochmal vorbei...</p>
+            <?php }
             wp_reset_postdata();?> 
     </div>
 </div>
