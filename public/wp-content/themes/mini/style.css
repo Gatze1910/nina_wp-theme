@@ -155,7 +155,7 @@ aside {
   font-size: var(--h2-Sacramento-font);
 }
 .content-context p {
-  padding-left: 10rem;
+  padding: 1rem 12rem;
   align-self: flex-start;
 }
 .content-context .content-text {
@@ -191,6 +191,7 @@ aside {
   margin-bottom: 5rem;
 }
 .content-info p {
+  padding: 1rem 12rem;
   margin-top: 5rem;
   color: black;
 }
@@ -211,6 +212,10 @@ aside {
 }
 .clip img {
   max-width: 200px;
+}
+
+.button {
+  color: var(--primary-color);
 }
 
 .content--frontpage-others {
